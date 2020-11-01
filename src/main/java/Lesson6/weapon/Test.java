@@ -12,7 +12,7 @@ public class Test {
         knife.hitEnemy(volanDeMort, 5);
         knife.hitEnemy(volanDeMort, 5);
         shotgun.hitEnemy(volanDeMort, 400);
-        shotgun.hitEnemy(volanDeMort, 500);
-        shotgun.hitEnemy(volanDeMort, 500);
+
+
     }
 }
