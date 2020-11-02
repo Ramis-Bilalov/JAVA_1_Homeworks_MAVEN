@@ -8,25 +8,6 @@ public class Cat extends Animal {
         swimDistance = 0;
     }
 
-
-    @Override
-    public void getRunDistance(Animal animal, double value) {
-        runDistance -= value;
-        if (runDistance <= 0) {
-            System.out.println(animal.getClass().getSimpleName() + " добежал. " +
-                    animal.getClass().getSimpleName() + " больше бежать не может");
-        }
-    }
-
-    @Override
-    public void getJumpHeight(Animal animal, double value) {
-        jumpHeight -= value;
-        if (jumpHeight <= 0) {
-            System.out.println(animal.getClass().getSimpleName() + " допрыгал. " +
-                    animal.getClass().getSimpleName() + " больше прыгать не может");
-        }
-    }
-
     @Override
     public void getSwimDistance(Animal animal, double value) {
         swimDistance -= value;
@@ -46,9 +27,5 @@ public class Cat extends Animal {
                 "\n\tБежать дальше? еще " + check(runDistance) + " метров" +
                 "\n\tПрыгать дальше? еще " + check((int)jumpHeight) + " метров" +
                 "\n\tПлыть дальше? еще " + check(swimDistance) + " метров\n";
-    }
-    public int check(int a) {
-        if(a <= 0) return 0;
-        return a;
     }
 }

@@ -1,18 +1,38 @@
 package Lesson6.HOMEWORK;
 
-public abstract class Animal {
+public class Animal {
 
     protected int runDistance;
     protected double jumpHeight;
     protected int swimDistance;
     protected double value;
 
-    public abstract void getRunDistance(Animal animal, double value);
+    public void getRunDistance(Animal animal, double value) {
+        runDistance -= value;
+        if (runDistance <= 0) {
+            System.out.println(animal.getClass().getSimpleName() + " добежал. " +
+                    animal.getClass().getSimpleName() + " больше бежать не может");
+        }
+    }
 
-    public abstract void getJumpHeight(Animal animal, double value);
+    public void getJumpHeight(Animal animal, double value) {
+        jumpHeight -= value;
+        if (jumpHeight <= 0) {
+            System.out.println(animal.getClass().getSimpleName() + " допрыгал. " +
+                    animal.getClass().getSimpleName() + " больше прыгать не может");
+        }
+    }
 
-    public abstract void getSwimDistance(Animal animal, double value);
+    public void getSwimDistance(Animal animal, double value) {
 
-    public abstract double getValue();
+    }
 
+    public double getValue() {
+        return 0;
+    }
+
+    public int check(int a) {
+        if(a <= 0) return 0;
+        return a;
+    }
 }
