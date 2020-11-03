@@ -6,5 +6,4 @@ public abstract class binaryExpression extends Expression{
         this.left = left;
         this.right = right;
     }
-
 }
