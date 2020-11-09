@@ -82,7 +82,6 @@ public class XOSelf {
 
     private static void moveAI() {
         int a = 0;
-
         int i = 0;
         int j = 0;
         while(MAP[i][j] != DEFAULT) {
@@ -91,7 +90,6 @@ public class XOSelf {
         }
         MAP[i][j] = PC;
 
-        //throw new IllegalArgumentException();
     }
 
 
